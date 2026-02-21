@@ -119,6 +119,7 @@ export function HeroSection() {
             className="object-cover"
             sizes="(max-width: 768px) 280px, 340px"
             priority
+            unoptimized
           />
         </motion.div>
       </div>

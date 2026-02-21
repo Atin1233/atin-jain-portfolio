@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-// Experience order: Elias Counsel, JSTickets, LeaseMynd, Linyr, CWF, Referee
+// Experience ordered by prominence: Elias Counsel, JSTickets, LeaseMynd, Linyr, CWF, Referee
 const projects = [
   {
     id: 'elias',
@@ -25,6 +25,7 @@ const projects = [
           fill
           className="object-contain object-center"
           sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+          unoptimized
         />
       </div>
     ),
@@ -49,6 +50,7 @@ const projects = [
           fill
           className="object-contain object-center"
           sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+          unoptimized
         />
       </div>
     ),
@@ -73,6 +75,7 @@ const projects = [
           fill
           className="object-contain object-center"
           sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+          unoptimized
         />
       </div>
     ),
@@ -97,6 +100,7 @@ const projects = [
             fill
             className="object-contain object-center"
             sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+            unoptimized
           />
         </a>
       </div>
@@ -147,6 +151,7 @@ const projects = [
           fill
           className="object-contain object-center"
           sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+          unoptimized
         />
       </div>
     ),

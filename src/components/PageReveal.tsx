@@ -13,7 +13,11 @@ export function PageReveal() {
   useEffect(() => {
     setMounted(true);
     const t = setTimeout(() => setRevealed(true), DURATION_MS);
-    return () => clearTimeout(t);
+    const fallback = setTimeout(() => setRevealed(true), 2000);
+    return () => {
+      clearTimeout(t);
+      clearTimeout(fallback);
+    };
   }, []);
 
   if (!mounted) return null;
