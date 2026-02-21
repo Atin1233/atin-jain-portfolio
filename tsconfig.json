@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "target": "esnext",
     "lib": [
       "dom",
@@ -20,10 +26,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
