@@ -97,7 +97,7 @@ export function HeroSection() {
               href="https://linkedin.com/in/atinjain1"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-white underline decoration-white/50 underline-offset-4 hover:decoration-white focus:outline focus:ring-2 focus:ring-white/50 rounded"
+              className="rounded-full border border-white px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10 focus:outline focus:ring-2 focus:ring-white/50"
             >
               LinkedIn
             </a>
