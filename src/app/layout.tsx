@@ -6,11 +6,11 @@ import { Providers } from '@/components/Providers';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://atinjain.com'),
-  title: 'Atin Jain | Financial Operations · Business Ownership · Pre-Launch Founder',
+  title: 'Atin Jain | always open to learn and earn.',
   description:
-    'High school junior. Managed accounts for JSTickets. Scaled CWF Apparel to profitability. Building LeaseMynd AI.',
+    'High school junior aspiring to major in finance and build a career in financial services.',
   openGraph: {
-    title: 'Atin Jain | Financial Operations · Business Ownership · Pre-Launch Founder',
+    title: 'Atin Jain | always open to learn and earn.',
     description:
       'High school junior. Managed accounts for JSTickets. Scaled CWF Apparel to profitability. Building LeaseMynd AI.',
     url: 'https://atinjain.com',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Atin Jain | Financial Operations · Business Ownership · Pre-Launch Founder',
+    title: 'Atin Jain | always open to learn and earn.',
     description:
       'High school junior. Managed accounts for JSTickets. Scaled CWF Apparel to profitability. Building LeaseMynd AI.',
   },

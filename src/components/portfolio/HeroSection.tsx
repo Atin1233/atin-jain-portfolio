@@ -64,7 +64,7 @@ export function HeroSection() {
             transition={delay(1)}
             className="mt-4 text-lg uppercase tracking-[0.1em] text-white/60"
           >
-            Financial Operations · Business Ownership · Pre-Launch Founder
+            always open to learn and earn.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
