@@ -174,12 +174,12 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
   return (
     <div
       ref={cardRef}
-      className="flex-shrink-0 w-full min-w-full h-full flex flex-col md:flex-row items-stretch overflow-hidden overflow-y-auto"
+      className="flex-shrink-0 w-full min-w-full min-h-full flex flex-col md:flex-row items-stretch overflow-y-auto overflow-x-hidden"
       onMouseMove={onMove}
       onMouseLeave={onLeave}
     >
       <div
-        className={`flex-1 flex flex-col justify-center p-6 sm:p-8 md:p-12 lg:p-16 bg-gradient-to-br ${project.color} min-h-0`}
+        className={`flex-1 flex flex-col justify-start md:justify-center p-4 sm:p-6 md:p-12 lg:p-16 bg-gradient-to-br ${project.color} min-h-0 overflow-y-auto`}
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -187,7 +187,7 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <p className="text-7xl font-light text-white/20 select-none">
+          <p className="text-3xl sm:text-5xl md:text-7xl font-light text-white/20 select-none leading-tight break-words">
             {project.metric}
           </p>
         </motion.div>
@@ -196,19 +196,19 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="text-4xl md:text-5xl font-light text-white mt-2"
+          className="text-2xl sm:text-3xl md:text-5xl font-light text-white mt-2 break-words"
         >
           {project.name}
         </motion.h3>
-        <p className="mt-2 text-lg uppercase tracking-widest text-white/70">
+        <p className="mt-2 text-sm sm:text-lg uppercase tracking-widest text-white/70 break-words">
           {project.role}
         </p>
         {project.location && (
-          <p className="mt-1 text-sm text-white/50">
+          <p className="mt-1 text-xs sm:text-sm text-white/50 break-words">
             {project.location}
           </p>
         )}
-        <ul className="mt-8 space-y-3">
+        <ul className="mt-4 sm:mt-8 space-y-2 sm:space-y-3">
           {project.bullets.map((bullet, i) => (
             <motion.li
               key={i}
@@ -216,16 +216,16 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-30px' }}
               transition={{ duration: 0.4, delay: 0.2 + i * 0.08 }}
-              className="text-white/90 text-sm md:text-base list-disc list-inside"
+              className="text-white/90 text-sm md:text-base list-disc list-inside break-words"
             >
               {bullet}
             </motion.li>
           ))}
         </ul>
       </div>
-      <div className="w-full md:w-[40%] flex-shrink-0 flex items-center justify-center p-4 sm:p-6 md:p-12 min-h-[220px] md:min-h-0">
+      <div className="w-full md:w-[40%] flex-shrink-0 flex items-center justify-center p-3 sm:p-6 md:p-12 min-h-[180px] sm:min-h-[220px] md:min-h-0">
         <motion.div
-          className="relative w-full h-full min-h-[200px] max-h-[320px] md:max-h-none md:min-h-[200px] aspect-video rounded-xl overflow-hidden bg-black/20"
+          className="relative w-full h-full min-h-[160px] sm:min-h-[200px] max-h-[240px] sm:max-h-[320px] md:max-h-none md:min-h-[200px] aspect-video rounded-xl overflow-hidden bg-black/20"
           style={{
             perspective: 1000,
             transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
@@ -279,13 +279,13 @@ export function ProofOfWork() {
       <h2 className="sr-only">Experience</h2>
       <div
         ref={containerRef}
-        className="no-scrollbar flex overflow-x-auto snap-x snap-mandatory gap-0 h-[85vh] min-h-[500px]"
+        className="no-scrollbar flex overflow-x-auto snap-x snap-mandatory gap-0 h-[85vh] min-h-[480px] max-h-[100dvh]"
         style={{ scrollSnapType: 'x mandatory' }}
       >
         {projects.map((project) => (
           <div
             key={project.id}
-            className="snap-center snap-always flex-shrink-0 w-full min-w-full h-full px-4 md:px-8"
+            className="snap-center snap-always flex-shrink-0 w-full min-w-full min-h-full px-2 sm:px-4 md:px-8"
           >
             <ProjectCard project={project} />
           </div>
