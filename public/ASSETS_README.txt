@@ -7,6 +7,6 @@ Place these files in the public/ folder for the portfolio:
 - linyragencylogo.png    — Linyr Web Design Studio logo (Experience)
 - eliascounselllclogo.png — Elias Counsel LLC logo (Experience)
 - refereelicense.png     — Soccer referee license image (Experience; rename to this if needed)
-- Atin_Jain_Resume.pdf   — Resume PDF (Download Resume button)
+- Atin_Jain_Resume_FINAL.pdf — Resume PDF (Download Resume button)
 
 If any asset is missing, that section will show a broken image or placeholder until you add the file.
