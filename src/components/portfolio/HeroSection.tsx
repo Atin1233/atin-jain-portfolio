@@ -81,7 +81,7 @@ export function HeroSection() {
             className="mt-10 flex flex-wrap items-center gap-6"
           >
             <Link
-              href="/Atin_Jain_Resume_FINAL.pdf"
+              href="/Atin_Jain_Resume.pdf"
               download
               className="rounded-full bg-white px-6 py-3 text-sm font-medium text-charcoal transition hover:bg-white/90 focus:outline focus:ring-2 focus:ring-white/50"
             >

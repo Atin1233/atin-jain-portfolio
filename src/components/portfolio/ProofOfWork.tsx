@@ -276,7 +276,9 @@ export function ProofOfWork() {
 
   return (
     <section id="proof" className="relative bg-charcoal py-8">
-      <h2 className="sr-only">Experience</h2>
+      <h2 className="px-4 md:px-8 mb-6 text-3xl md:text-4xl font-light tracking-tight text-white">
+        Experience
+      </h2>
       <div
         ref={containerRef}
         className="no-scrollbar flex overflow-x-auto snap-x snap-mandatory gap-0 h-[85vh] min-h-[480px] max-h-[100dvh]"
