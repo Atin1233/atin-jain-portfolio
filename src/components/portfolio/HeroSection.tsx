@@ -105,7 +105,7 @@ export function HeroSection() {
         </motion.div>
       </div>
 
-      <div className="relative z-10 flex flex-1 items-center justify-center md:justify-end md:w-[40%] md:pr-8 lg:pr-12">
+      <div className="relative z-10 flex flex-1 items-center justify-center md:w-[40%] px-4 sm:px-6 md:px-8 lg:px-12">
         <motion.div
           initial={{ clipPath: 'circle(50% at 50% 50%)' }}
           animate={{ clipPath: 'inset(0% 0% 0% 0% round 24px)' }}
@@ -113,7 +113,7 @@ export function HeroSection() {
           className="relative h-[320px] w-[280px] md:h-[420px] md:w-[340px] overflow-hidden rounded-3xl grayscale hover:grayscale-0 hover:scale-[1.05] transition-all duration-500"
         >
           <Image
-            src="/headshot.jpeg"
+            src="/headshot.jpg"
             alt="Atin Jain"
             fill
             className="object-cover"
