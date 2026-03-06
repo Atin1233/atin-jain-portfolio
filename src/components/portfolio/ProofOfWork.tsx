@@ -120,7 +120,7 @@ const projects = [
     metric: 'High 4-figures revenue',
     color: 'from-emerald-900/40 to-emerald-950/60',
     media: (
-      <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-black/20">
+      <a href="https://conquerwithfaith.com" target="_blank" rel="noopener noreferrer" className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-black/20">
         <video
           autoPlay
           loop
@@ -130,7 +130,7 @@ const projects = [
         >
           <source src="/cwfvid.mp4" type="video/mp4" />
         </video>
-      </div>
+      </a>
     ),
   },
   {
