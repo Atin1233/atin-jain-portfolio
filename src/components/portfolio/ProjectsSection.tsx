@@ -28,9 +28,9 @@ export function ProjectsSection() {
       >
         Projects
       </motion.h2>
-      <ul className="space-y-8 max-w-2xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         {projects.map((project, i) => (
-          <motion.li
+          <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export function ProjectsSection() {
                 <h3 className="text-xl font-medium text-white">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-white/70 text-sm md:text-base leading-relaxed">
+                <p className="mt-2 text-white/70 text-sm md:text-base leading-relaxed line-clamp-4">
                   {project.description}
                 </p>
                 {project.label && (
@@ -62,14 +62,14 @@ export function ProjectsSection() {
                 <h3 className="text-xl font-medium text-white">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-white/70 text-sm md:text-base leading-relaxed">
+                <p className="mt-2 text-white/70 text-sm md:text-base leading-relaxed line-clamp-4">
                   {project.description}
                 </p>
               </div>
             )}
-          </motion.li>
+          </motion.div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
