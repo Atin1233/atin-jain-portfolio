@@ -110,7 +110,7 @@ export function HeroSection() {
           initial={{ clipPath: 'circle(50% at 50% 50%)' }}
           animate={{ clipPath: 'inset(0% 0% 0% 0% round 24px)' }}
           transition={{ duration: 1, delay: 0.5, ease: [0.76, 0, 0.24, 1] }}
-          className="relative h-[320px] w-[280px] md:h-[420px] md:w-[340px] overflow-hidden rounded-3xl grayscale hover:grayscale-0 hover:scale-[1.05] transition-all duration-500"
+          className="relative h-[320px] w-[280px] md:h-[420px] md:w-[340px] overflow-hidden rounded-3xl hover:grayscale hover:scale-[1.05] transition-all duration-500"
         >
           <Image
             src="/headshot.jpg"
