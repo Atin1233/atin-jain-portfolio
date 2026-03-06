@@ -84,25 +84,24 @@ const projects = [
     id: 'linyr',
     name: 'Linyr Web Design Studio',
     role: 'Founder',
-    location: 'Remote · June 2025 – Present · linyr.vercel.app',
+    location: 'Remote · June 2025 – Present',
     bullets: [
       'Design and deliver custom websites to business clients; manage projects from scope definition through deployment.',
       'Generate revenue through direct sales, cold outreach, and referral networks.',
     ],
     metric: 'Building since 2024',
     color: 'from-violet-900/40 to-violet-950/60',
+    url: 'https://linyr.vercel.app',
     media: (
       <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center p-4">
-        <a href="https://linyr.vercel.app" target="_blank" rel="noopener noreferrer" className="relative block w-full h-full">
-          <Image
-            src="/linyragencylogo.png"
-            alt="Linyr Web Design Studio"
-            fill
-            className="object-contain object-center"
-            sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
-            unoptimized
-          />
-        </a>
+        <Image
+          src="/linyragencylogo.png"
+          alt="Linyr Web Design Studio"
+          fill
+          className="object-contain object-center"
+          sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+          unoptimized
+        />
       </div>
     ),
   },
@@ -110,7 +109,7 @@ const projects = [
     id: 'cwf',
     name: 'Conquer With Faith Apparel Co.',
     role: 'Founder & CEO',
-    location: 'New Jersey · Feb 2024 – Present · conquerwithfaith.com',
+    location: 'New Jersey · Feb 2024 – Present',
     bullets: [
       'Manage full financial operations for self-funded e-commerce: budgeting, pricing strategy, and cash flow.',
       'Deployed personal capital into inventory and marketing; achieved profitability through cost optimization and demand forecasting.',
@@ -119,8 +118,9 @@ const projects = [
     ],
     metric: 'High 4-figures revenue',
     color: 'from-emerald-900/40 to-emerald-950/60',
+    url: 'https://conquerwithfaith.com',
     media: (
-      <a href="https://conquerwithfaith.com" target="_blank" rel="noopener noreferrer" className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-black/20">
+      <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-black/20">
         <video
           autoPlay
           loop
@@ -130,7 +130,7 @@ const projects = [
         >
           <source src="/cwfvid.mp4" type="video/mp4" />
         </video>
-      </a>
+      </div>
     ),
   },
   {
@@ -222,6 +222,20 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
             </motion.li>
           ))}
         </ul>
+        {project.url && (
+          <motion.a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            className="mt-6 inline-block text-sm font-medium text-white/80 underline decoration-white/40 underline-offset-4 hover:text-white hover:decoration-white transition-colors"
+          >
+            {project.url.replace('https://', '')}
+          </motion.a>
+        )}
       </div>
       <div className="w-full md:w-[40%] flex-shrink-0 flex items-center justify-center p-3 sm:p-6 md:p-12 min-h-[180px] sm:min-h-[220px] md:min-h-0">
         <motion.div
