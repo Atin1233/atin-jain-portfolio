@@ -67,6 +67,7 @@ const projects = [
     ],
     metric: 'Pre-launch validation',
     color: 'from-amber-900/40 to-amber-950/60',
+    url: 'https://leasemynd.com',
     media: (
       <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center p-4">
         <Image

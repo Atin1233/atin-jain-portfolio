@@ -8,6 +8,8 @@ const projects = [
   {
     title: 'LeaseMynd AI',
     description: 'AI-powered lease intelligence platform for REITs and property managers. Translates complex legal documents into structured, actionable data to reduce due diligence costs and attorney review time. Currently in pre-launch validation with MG Construction and independent real estate brokers.',
+    href: 'https://leasemynd.com',
+    label: 'View Project',
   },
   {
     title: 'FreshSense DECA 10 Page Paper',
