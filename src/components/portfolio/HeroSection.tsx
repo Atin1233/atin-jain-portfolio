@@ -113,7 +113,7 @@ export function HeroSection() {
           className="relative h-[320px] w-[280px] md:h-[420px] md:w-[340px] overflow-hidden rounded-3xl hover:grayscale hover:scale-[1.05] transition-all duration-500"
         >
           <Image
-            src="/headshot.jpg"
+            src="/headshot.png"
             alt="Atin Jain"
             fill
             className="object-cover"
