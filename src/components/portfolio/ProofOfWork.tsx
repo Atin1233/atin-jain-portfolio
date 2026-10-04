@@ -4,14 +4,6 @@ import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-function Mark({ label }: { label: string }) {
-  return (
-    <div className="flex h-full min-h-[180px] w-full items-center justify-center md:min-h-[200px]">
-      <span className="text-5xl font-light tracking-tight text-white/80 md:text-6xl">{label}</span>
-    </div>
-  );
-}
-
 // Current roles from LinkedIn first, then ventures and earlier experience.
 const projects = [
   {
@@ -25,7 +17,26 @@ const projects = [
     ],
     metric: 'New York',
     color: 'from-sky-900/40 to-slate-950/70',
-    media: <Mark label="RC" />,
+    media: (
+      <div className="flex h-full min-h-[180px] w-full flex-col items-center justify-center gap-3 overflow-hidden px-4 py-3 pb-10 md:min-h-[200px] md:gap-6 md:pb-4">
+        <Image
+          src="/razorconsultinglogo.png"
+          alt="Razor Consulting"
+          width={470}
+          height={215}
+          className="h-auto max-h-[38%] w-auto max-w-[88%] object-contain md:max-h-[42%]"
+          unoptimized
+        />
+        <Image
+          src="/bdproslogo.png"
+          alt="Business Development Professionals"
+          width={619}
+          height={225}
+          className="h-auto max-h-[38%] w-auto max-w-[88%] bg-white object-contain px-2 py-1 md:max-h-[42%]"
+          unoptimized
+        />
+      </div>
+    ),
   },
   {
     id: 'toyota',
@@ -37,7 +48,18 @@ const projects = [
     ],
     metric: 'Dayton, NJ',
     color: 'from-red-950/50 to-stone-950/70',
-    media: <Mark label="DT" />,
+    media: (
+      <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center p-4">
+        <Image
+          src="/daytontoyotalogo.png"
+          alt="Dayton Toyota"
+          fill
+          className="object-contain object-center"
+          sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+          unoptimized
+        />
+      </div>
+    ),
   },
   {
     id: 'leasemynd',
