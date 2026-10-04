@@ -61,6 +61,8 @@ const skills: {
   { name: 'Revenue Operations', category: 'Finance & Accounting', context: 'Tracking revenue, expenses, and month-end reporting.', icon: 'chart' },
   { name: 'Financial Documentation', category: 'Finance & Accounting', context: 'Spreadsheets and documentation.', icon: 'document' },
   { name: 'Excel / Google Sheets', category: 'Finance & Accounting', context: 'Transaction tracking and spreadsheets.', icon: 'document' },
+  { name: 'Business Development', category: 'Operations & Business', context: 'Administrative support for client introductions at Razor Consulting and BDPros.', icon: 'handshake' },
+  { name: 'Customer Service', category: 'Operations & Business', context: 'Appointment coordination and inbound communication at Dayton Toyota.', icon: 'handshake' },
   { name: 'Contract Coordination', category: 'Operations & Business', context: 'Membership contracts, renewals, and client agreements.', icon: 'document' },
   { name: 'Client Relations', category: 'Operations & Business', context: 'Direct sales, outreach, and professional client communication.', icon: 'handshake' },
   { name: 'Sales Cycle Management', category: 'Operations & Business', context: 'From scope definition through deployment and follow-up.', icon: 'handshake' },

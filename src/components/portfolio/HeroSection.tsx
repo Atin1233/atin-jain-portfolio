@@ -64,7 +64,7 @@ export function HeroSection() {
             transition={delay(1)}
             className="mt-4 text-lg uppercase tracking-[0.1em] text-white/60"
           >
-            always open to learn and earn.
+            LeaseMynd | CRE Lease Review
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -72,7 +72,7 @@ export function HeroSection() {
             transition={{ delay: 1, duration: 0.5 }}
             className="mt-8 text-base text-white/80 leading-relaxed max-w-lg"
           >
-            High school junior (Class of 2027) aspiring to major in finance and build a career in financial services.
+            High school senior at Monroe Township High School (Class of 2027). Founder of LeaseMynd, piloting first-pass commercial lease review with attorneys. Administrative Support Connector at Razor Consulting in New York, and Business Development Center Representative at Dayton Toyota.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -94,7 +94,7 @@ export function HeroSection() {
               View Experience
             </Link>
             <a
-              href="https://linkedin.com/in/atinjain1"
+              href="https://www.linkedin.com/in/atinjain1/"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-white px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10 focus:outline focus:ring-2 focus:ring-white/50"

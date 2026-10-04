@@ -9,13 +9,16 @@ const coursework = [
   'Accounting 1',
   'AP Computer Science Principles',
   'AP Computer Science A',
+  'CS50: Web Programming with Python and JavaScript (Harvard)',
   'AP Psychology',
   'AP United States History',
+  'Summer Geometry, The Peddie School',
 ];
 
 const activities = [
   { name: 'DECA', detail: '2x States-level competitor (business strategy and financial decision-making)' },
   { name: 'FBLA', detail: 'Banking & Financial Systems' },
+  { name: 'Red Cross', detail: 'Member' },
   { name: 'Entrepreneur and Innovation Association', detail: 'Member' },
   { name: 'Varsity Soccer', detail: 'Competitive resilience and performance under pressure' },
   { name: 'Varsity Track', detail: '' },

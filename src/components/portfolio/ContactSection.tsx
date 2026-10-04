@@ -58,7 +58,7 @@ export function ContactSection() {
           732-666-5310
         </a>
         <a
-          href="https://linkedin.com/in/atinjain1"
+          href="https://www.linkedin.com/in/atinjain1/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-charcoal underline decoration-charcoal/40 underline-offset-4 hover:decoration-charcoal focus:outline focus:ring-2 focus:ring-charcoal/30 rounded px-2 py-1"

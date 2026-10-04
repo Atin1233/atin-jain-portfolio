@@ -6,22 +6,22 @@ import { Providers } from '@/components/Providers';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://atinjain.com'),
-  title: 'Atin Jain | always open to learn and earn.',
+  title: 'Atin Jain | LeaseMynd | CRE Lease Review',
   description:
-    'High school junior aspiring to major in finance and build a career in financial services.',
+    'High school senior and founder of LeaseMynd. Administrative Support Connector at Razor Consulting, and Business Development Center Representative at Dayton Toyota.',
   openGraph: {
-    title: 'Atin Jain | always open to learn and earn.',
+    title: 'Atin Jain | LeaseMynd | CRE Lease Review',
     description:
-      'High school junior. Managed accounts for JSTickets. Scaled CWF Apparel to profitability. Building LeaseMynd AI.',
+      'Founder of LeaseMynd. Administrative Support Connector at Razor Consulting and BDPros. Business Development Center Representative at Dayton Toyota.',
     url: 'https://atinjain.com',
     siteName: 'Atin Jain',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Atin Jain | always open to learn and earn.',
+    title: 'Atin Jain | LeaseMynd | CRE Lease Review',
     description:
-      'High school junior. Managed accounts for JSTickets. Scaled CWF Apparel to profitability. Building LeaseMynd AI.',
+      'Founder of LeaseMynd. Administrative Support Connector at Razor Consulting and BDPros. Business Development Center Representative at Dayton Toyota.',
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://atinjain.com' },
@@ -33,10 +33,10 @@ const personStructuredData = {
   name: 'Atin Jain',
   url: 'https://atinjain.com',
   email: 'atinjain117@gmail.com',
-  jobTitle: 'Founder & Financial Operations',
+  jobTitle: 'Founder, LeaseMynd',
   description:
-    'High school junior aspiring to major in finance and build a career in financial services.',
-  sameAs: ['https://linkedin.com/in/atinjain1'],
+    'High school senior and founder of LeaseMynd. Administrative Support Connector at Razor Consulting, and Business Development Center Representative at Dayton Toyota.',
+  sameAs: ['https://www.linkedin.com/in/atinjain1/'],
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Monroe Township',

@@ -4,68 +4,52 @@ import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-// Experience ordered by prominence: Elias Counsel, JSTickets, LeaseMynd, Linyr, CWF, Referee
+function Mark({ label }: { label: string }) {
+  return (
+    <div className="flex h-full min-h-[180px] w-full items-center justify-center md:min-h-[200px]">
+      <span className="text-5xl font-light tracking-tight text-white/80 md:text-6xl">{label}</span>
+    </div>
+  );
+}
+
+// Current roles from LinkedIn first, then ventures and earlier experience.
 const projects = [
   {
-    id: 'elias',
-    name: 'Elias Counsel LLC',
-    role: 'Intern',
-    location: 'New Jersey · July 2024 – Sept 2024',
+    id: 'razor',
+    name: 'Razor Consulting & BDPros',
+    role: 'Administrative Support Connector',
+    location: 'New York, NY · July 2026 – Present',
     bullets: [
-      'Shadowed estate planning attorneys; observed trust administration, wealth transfer strategies, and fiduciary compliance processes.',
-      'Reviewed client financial documentation structures and tax implication frameworks for estate decisions.',
+      'Administrative Support Connector at Razor Consulting and Business Development Professionals (BDPros).',
+      'Razor Consulting is an outsourced New York business development firm built around client introductions.',
     ],
-    metric: 'Wealth & estate planning',
-    color: 'from-slate-800/50 to-slate-900/70',
-    media: (
-      <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center p-4">
-        <Image
-          src="/eliascounselllclogo.png"
-          alt="Elias Counsel LLC"
-          fill
-          className="object-contain object-center"
-          sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
-          unoptimized
-        />
-      </div>
-    ),
+    metric: 'New York',
+    color: 'from-sky-900/40 to-slate-950/70',
+    media: <Mark label="RC" />,
   },
   {
-    id: 'jstickets',
-    name: 'JSTickets',
-    role: 'Assistant Account & Financial Manager Intern',
-    location: 'Monroe Township, NJ / Long Island, NY (Hybrid) · June 2025 – Sept 2025',
+    id: 'toyota',
+    name: 'Dayton Toyota',
+    role: 'Business Development Center Representative',
+    location: 'Dayton, NJ · July 2026 – Present',
     bullets: [
-      'Maintained financial accounts and detailed spreadsheets tracking transactions, expenses, and revenue across multiple business lines.',
-      'Processed payments and invoices; managed membership contracts and renewals with professional soccer clubs.',
-      'Supported month-end reporting accuracy and collaborated with finance team to streamline documentation workflows.',
+      'Support dealership operations by coordinating customer service appointments, managing inbound communications, and helping optimize the customer experience.',
     ],
-    metric: 'Month-end reporting accuracy',
-    color: 'from-blue-900/40 to-blue-950/60',
-    media: (
-      <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center p-4">
-        <Image
-          src="/jsticketslogo.jpeg"
-          alt="JSTickets"
-          fill
-          className="object-contain object-center"
-          sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
-          unoptimized
-        />
-      </div>
-    ),
+    metric: 'Dayton, NJ',
+    color: 'from-red-950/50 to-stone-950/70',
+    media: <Mark label="DT" />,
   },
   {
     id: 'leasemynd',
     name: 'LeaseMynd AI',
-    role: 'Pre-Launch Founder',
-    location: 'Feb 2025 – Present',
+    role: 'Founder',
+    location: 'March 2025 – Present',
     bullets: [
-      'Pre-launch founder of AI-powered lease intelligence platform for REITs and property managers.',
-      'Conducted customer discovery with MG Construction and independent real estate brokers to validate demand for automated contract analysis.',
-      'Translating complex legal documents into structured, actionable data to reduce due diligence costs and attorney review time.',
+      'Help commercial real estate law firms compress first-pass lease review from hours to minutes.',
+      'Product covers structured risk analysis, market benchmarks, and client-ready outputs.',
+      'Piloting with attorneys now.',
     ],
-    metric: 'Pre-launch validation',
+    metric: 'Piloting with attorneys',
     color: 'from-amber-900/40 to-amber-950/60',
     url: 'https://leasemynd.com',
     media: (
@@ -110,8 +94,9 @@ const projects = [
     id: 'cwf',
     name: 'Conquer With Faith Apparel Co.',
     role: 'Founder & CEO',
-    location: 'New Jersey · Feb 2024 – Present',
+    location: 'New Jersey · March 2024 – Present',
     bullets: [
+      'Founded a gym apparel brand built around faith, self-improvement, and personal growth.',
       'Manage full financial operations for self-funded e-commerce: budgeting, pricing strategy, and cash flow.',
       'Deployed personal capital into inventory and marketing; achieved profitability through cost optimization and demand forecasting.',
       'Negotiate supplier terms and manage inventory procurement to maintain target margins.',
@@ -135,10 +120,60 @@ const projects = [
     ),
   },
   {
+    id: 'jstickets',
+    name: 'JSTickets',
+    role: 'Intern',
+    location: 'June 2025 – September 2025',
+    bullets: [
+      'Assisted with financial management and general operations.',
+      'Maintained financial accounts and detailed spreadsheets tracking transactions, expenses, and revenue across multiple business lines.',
+      'Processed payments and invoices; managed membership contracts and renewals with professional soccer clubs.',
+      'Supported month-end reporting accuracy and collaborated with finance team to streamline documentation workflows.',
+    ],
+    metric: 'Month-end reporting accuracy',
+    color: 'from-blue-900/40 to-blue-950/60',
+    media: (
+      <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center p-4">
+        <Image
+          src="/jsticketslogo.jpeg"
+          alt="JSTickets"
+          fill
+          className="object-contain object-center"
+          sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+          unoptimized
+        />
+      </div>
+    ),
+  },
+  {
+    id: 'elias',
+    name: 'Elias Counsel LLC',
+    role: 'Intern',
+    location: 'New Jersey · July 2024 – September 2024',
+    bullets: [
+      'Shadowed estate planning attorneys; observed trust administration, wealth transfer strategies, and fiduciary compliance processes.',
+      'Reviewed client financial documentation structures and tax implication frameworks for estate decisions.',
+    ],
+    metric: 'Wealth & estate planning',
+    color: 'from-slate-800/50 to-slate-900/70',
+    media: (
+      <div className="relative w-full h-full min-h-[180px] md:min-h-[200px] flex items-center justify-center p-4">
+        <Image
+          src="/eliascounselllclogo.png"
+          alt="Elias Counsel LLC"
+          fill
+          className="object-contain object-center"
+          sizes="(max-width: 768px) 100vw, min(40vw, 400px)"
+          unoptimized
+        />
+      </div>
+    ),
+  },
+  {
     id: 'referee',
     name: 'Soccer Referee',
     role: 'Grassroots – Adult Recreation',
-    location: 'U.S. Soccer Federation · New Jersey · Oct 2023 – Present',
+    location: 'U.S. Soccer Federation · New Jersey · Since October 2023',
     bullets: [
       'Officiate competitive matches requiring real-time decision-making under pressure and rule enforcement authority.',
     ],

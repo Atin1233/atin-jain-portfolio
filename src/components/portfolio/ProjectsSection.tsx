@@ -7,7 +7,7 @@ const DECA_PAPER_URL = '/FreshSense%20DECA%2010%20Page%20Paper%20Atin%20Jain%20%
 const projects = [
   {
     title: 'LeaseMynd AI',
-    description: 'AI-powered lease intelligence platform for REITs and property managers. Translates complex legal documents into structured, actionable data to reduce due diligence costs and attorney review time. Currently in pre-launch validation with MG Construction and independent real estate brokers.',
+    description: 'Founded March 2025. Helps commercial real estate law firms compress first-pass lease review from hours to minutes with structured risk analysis, market benchmarks, and client-ready outputs. Piloting with attorneys now.',
     href: 'https://leasemynd.com',
     label: 'View Project',
   },
